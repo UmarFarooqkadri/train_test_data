@@ -10,7 +10,7 @@ on:
     - cron: '33 15 * * 2'
 
 jobs:
-  build:
+  security:
     name: Build
     runs-on: "ubuntu-18.04"
     steps:
