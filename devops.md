@@ -23,14 +23,21 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 ### Quick Start
 
 1. Create a GKE Cluster
+
 ```a. cd EV```
+
 ```b. cd infra-terraform```
+
 ```c. terraform init```
+
 ```d. terraform plan```
+
 ```e. terraform apply```
 
 2. Login to gcloud from the CLI
+
 ```gcloud init --console-only```
+
 ```gcloud info```
 
 3. Check all the clusters and get the credentials of the cluster we created
@@ -43,17 +50,26 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 
 5. Create a deployment and Service in the GKE Cluster
 ```a. cd EV```
+
 ```b. cd kube-terraform```
+
 ```c. terraform init```
+
 ```c. terraform plan```
+
 ```c. terraform apply```
+
 
 6. Check resources
 ```kubectl get all -A --kubeconfig config```
+
 ```kubectl get all -A --kubeconfig config```
+
 OR (If location of the config file is different)
 ```kubectl get all -A --kubeconfig config```
+
 ```kubectl get all -A --kubeconfig config```
+
 
 
 ### Link to the Application
