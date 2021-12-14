@@ -69,9 +69,9 @@ Note: Copy the kube config file to the kube-terraform folder.
 
 6. Check resources
 
-  ```kubectl get all -A --kubeconfig config```
+  ```kubectl get all -A```
 
-  ```kubectl get all -A --kubeconfig config```
+  ```kubectl get all -A```
 
 OR (If location of the config file is different)
 
