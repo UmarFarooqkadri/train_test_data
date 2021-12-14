@@ -24,51 +24,58 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 
 1. Create a GKE Cluster
 
-```a. cd EV```
+  ```a. cd EV```
 
-```b. cd infra-terraform```
+  ```b. cd infra-terraform```
 
-```c. terraform init```
+  ```c. terraform init```
 
-```d. terraform plan```
+  ```d. terraform plan```
 
-```e. terraform apply```
+  ```e. terraform apply```
 
 2. Login to gcloud from the CLI
 
-```gcloud init --console-only```
+  ```gcloud init --console-only```
 
-```gcloud info```
+  ```gcloud info```
 
 3. Check all the clusters and get the credentials of the cluster we created
-```gcloud container clusters list```
-```gcloud container clusters get-credentials gke-cluster-farooq --region=europe-west1```
+
+  ```gcloud container clusters list```
+
+  ```gcloud container clusters get-credentials gke-cluster-farooq --region=europe-west1```
 
 4. Check/verify/set the context
-``` kubectl config view | grep farooq```
-```kubectl config use-context gke_evbox-infrastructure_europe-west1_gke-cluster-farooq```
+
+  ``` kubectl config view | grep farooq```
+
+  ```kubectl config use-context gke_evbox-infrastructure_europe-west1_gke-cluster-farooq```
 
 5. Create a deployment and Service in the GKE Cluster
-```a. cd EV```
 
-```b. cd kube-terraform```
+  ```a. cd EV```
 
-```c. terraform init```
+  ```b. cd kube-terraform```
 
-```c. terraform plan```
+  ```c. terraform init```
 
-```c. terraform apply```
+  ```c. terraform plan```
+
+  ```c. terraform apply```
 
 
 6. Check resources
-```kubectl get all -A --kubeconfig config```
 
-```kubectl get all -A --kubeconfig config```
+  ```kubectl get all -A --kubeconfig config```
+
+  ```kubectl get all -A --kubeconfig config```
 
 OR (If location of the config file is different)
-```kubectl get all -A --kubeconfig config```
 
-```kubectl get all -A --kubeconfig config```
+  ```kubectl get all -A --kubeconfig config```
+
+  ```kubectl get all -A --kubeconfig config```
 
 
 
