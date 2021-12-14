@@ -48,11 +48,13 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 
 4. Check/verify/set the context
 
-  ``` kubectl config view | grep farooq```
+  ``` kubectl config view```
 
   ```kubectl config use-context gke_evbox-infrastructure_europe-west1_gke-cluster-farooq```
 
-5. Create a deployment and Service in the GKE Cluster
+5. Create a deployment and Service in the GKE Cluster. 
+
+Note: Copy the kube config file to the kube-terraform folder.
 
   ```a. cd EV```
 
