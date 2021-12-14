@@ -36,7 +36,7 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 
 2. Login to gcloud from the CLI
 
-  ```gcloud init --console-only```
+  ```gcloud auth activate-service-account devops-assignment@evbox-infrastructure.iam.gserviceaccount.com --key-file=./evbox-infrastructure-79079069b6a1.json --project=evbox-infrastructure```
 
   ```gcloud info```
 
