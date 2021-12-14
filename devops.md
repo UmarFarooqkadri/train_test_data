@@ -54,7 +54,7 @@ This is responsible to deploy `nginxdemos/hello` on the Kubernetes Cluster using
 
 5. Create a deployment and Service in the GKE Cluster. 
 
-Note: Copy the kube config file to the kube-terraform folder.
+Note: Copy the kube config file to the kube-terraform folder or if you are using the default file then change the file path in the terraform code.
 
   ```a. cd EV```
 
